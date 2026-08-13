@@ -129,6 +129,24 @@ See `sample_data/sample.csv`, `sample_data/sample_aliased_columns.csv`
 and `sample_data/BSM inputs.xlsx`. A file can also be run from the CLI:
 `python scripts/run_excel_file.py "sample_data/BSM inputs.xlsx" [row]`.
 
+## Live Demo
+
+> Deployment target: **Streamlit Community Cloud** (Vercel cannot host
+> Streamlit apps — it has no persistent Python server or WebSocket
+> support, which Streamlit requires).
+>
+> **Live link:** _coming soon — deploy steps below._
+
+To deploy (one time, ~2 minutes):
+
+1. Go to [share.streamlit.io](https://share.streamlit.io) and sign in
+   with GitHub (`rayuga09`).
+2. Click **Create app → Deploy a public app from GitHub**.
+3. Select repository `rayuga09/ayush_bsm`, branch `main`, main file
+   `app.py`, then **Deploy**.
+4. The app will be served at `https://<your-subdomain>.streamlit.app` —
+   put that URL in this section.
+
 ## Installation
 
 ```bash
