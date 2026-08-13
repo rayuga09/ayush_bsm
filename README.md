@@ -131,21 +131,19 @@ and `sample_data/BSM inputs.xlsx`. A file can also be run from the CLI:
 
 ## Live Demo
 
-> Deployment target: **Streamlit Community Cloud** (Vercel cannot host
-> Streamlit apps — it has no persistent Python server or WebSocket
-> support, which Streamlit requires).
->
-> **Live link:** _coming soon — deploy steps below._
+**Live link: [https://rayuga09.github.io/ayush_bsm/](https://rayuga09.github.io/ayush_bsm/)**
 
-To deploy (one time, ~2 minutes):
+Hosted on **GitHub Pages** via [stlite](https://github.com/whitphx/stlite):
+the entire Streamlit app runs inside your browser on a WebAssembly Python
+runtime (Pyodide) — no backend server. The first load downloads the Python
+runtime and scientific libraries (~40 MB), so allow up to a minute;
+subsequent loads are cached and much faster. All calculations run locally
+in your browser.
 
-1. Go to [share.streamlit.io](https://share.streamlit.io) and sign in
-   with GitHub (`rayuga09`).
-2. Click **Create app → Deploy a public app from GitHub**.
-3. Select repository `rayuga09/ayush_bsm`, branch `main`, main file
-   `app.py`, then **Deploy**.
-4. The app will be served at `https://<your-subdomain>.streamlit.app` —
-   put that URL in this section.
+Alternative (server-backed) deployment: [Streamlit Community
+Cloud](https://share.streamlit.io) — sign in with GitHub, pick
+`rayuga09/ayush_bsm`, branch `main`, file `app.py`, and deploy. (Vercel is
+not an option: it cannot host Streamlit's persistent WebSocket server.)
 
 ## Installation
 
